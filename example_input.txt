@@ -1,3 +1,9 @@
+Making a request via HTTP
+
 curl -o example_output.json -X POST http://localhost:5000/fileinfo -H "Content-Type: application/json" -d "{\"file_path\":\"/home/mcaballero/larbs.sh\"}"
+
+Making a request via the "reciver" program
+
+python receiver.py > output.json
 
 
