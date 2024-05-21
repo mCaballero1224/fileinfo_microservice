@@ -35,3 +35,6 @@ def get_file_info(url, file_path):
 * Add option for timestamp in case something more human-readable is needed' 
   
 * The function only works with absolute file paths, figure out how to use relative paths
+
+* Add functionality to send the file itself and extract info from it 
+  
