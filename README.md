@@ -1,17 +1,17 @@
 # fileinfo_microservice
 A small python program that grabs data about a file and returns it as a JSON.
 
-== Requesting Data ==
+## Requesting Data
 
 Requesting the JSON data can be done in one of two ways
 
-=== HTTP Request ===
+### HTTP Request 
 
 ```
 curl -o example_output.json -X POST http://localhost:5000/fileinfo -H "Content-Type: application/json" -d "{\"file_path\":\"/home/mcaballero/larbs.sh\"}"
 ```
 
-=== Programatically == 
+### Programatically 
 ```
 def get_file_info(url, file_path):
     # setup request msg
@@ -28,7 +28,10 @@ def get_file_info(url, file_path):
         print(f"Error retrieving file info. Status: {response.status_code}\nResponse: {response.text}")
 ```
 
-== TODO ==
+## UML Diagram
+![UML Diagram for Client/Server communication](https://github.com/mCaballero1224/fileinfo_microservice/blob/main/UML.png)
+
+## TODO
 
 * Make microservice more configurable, allowing for singling out what info about the file is returned
 
