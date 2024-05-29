@@ -4,6 +4,8 @@ from datetime import datetime
 
 app = Flask(__name__)
 
+def format_date(date):
+    return datetime.fromtimestamp(date).strftime('%m/%d/%Y %I:%M %p')
 def get_file_info(file_path):
     try:
         # get file stats
@@ -13,8 +15,8 @@ def get_file_info(file_path):
         file_info = {
             "file_name": os.path.basename(file_path),
             "file_size": file_stats.st_size,
-            "creation_time": datetime.fromtimestamp(file_stats.st_ctime).isoformat(),
-            "modification_time": datetime.fromtimestamp(file_stats.st_mtime).isoformat(),
+            "creation_time": format_date(file_stats.st_ctime),
+            "modification_time": format_date(file_stats.st_mtime),
             "file_path": file_path
         }
 
