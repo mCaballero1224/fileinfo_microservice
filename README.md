@@ -35,7 +35,7 @@ def get_file_info(url, file_path):
 
 * Make microservice more configurable, allowing for singling out what info about the file is returned
 
-* Add option for timestamp in case something more human-readable is needed' 
+~~ * Add option for timestamp in case something more human-readable is needed' ~~
   
 * The function only works with absolute file paths, figure out how to use relative paths
 
