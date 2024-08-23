@@ -17,9 +17,8 @@ def get_file_info(url, file_path):
 
 if __name__ == "__main__":
     server_url = "http://localhost:5000/fileinfo"
-    
-    file_path = "/home/mcaballero/Development/CS361/fileinfo_microservice/examples/larbs.sh"
-    
+
+    file_path = "C:/Users/Max/Downloads/test2(1).csv"
+
     # request file and print the JSON response
     get_file_info(server_url, file_path)
-
